@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natural Soap Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
+    <style>
+      body {
+        font-family: "Open Sans", sans-serif;
+        background: #f5f5f5;
+        color: #333;
+      }
+      .navbar {
+        width: 100%;
+        position: relative;
+        top: 10px;
+        display: flex;
+        justify-content: center;
+      }
+      .navbar-menu {
+        justify-content: center;
+        width: auto;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      .logo img {
+        height: 100px;
+        width: auto;
+      }
+      .logo p {
+        font-size: larger;
+        text-align: center;
+      }
+      .hero {
+        background-image: url("https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #ffffff;
+        filter: blur(3px);
+        -webkit-filter: blur(3px);
+      }
+      .section {
+        padding: 50px 0;
+      }
+      .container {
+        max-width: 1200px;
+      }
+      .button.is-primary {
+        background-color: #8a5a44;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation and Logo -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-menu">
+        <a class="navbar-item" href="#home">Home</a>
+        <a class="navbar-item" href="#products">Products</a>
+        <a class="navbar-item" href="#guarantee">Guarantee</a>
+        <a class="navbar-item" href="#about">About Us</a>
+        <a class="navbar-item" href="#contact">Contact Us</a>
+      </div>
+    </nav>
+    <div class="logo">
+      <a href="#home">
+        <img src="logo2.png" alt="Natural Soap Logo" />
+        <p>Lira Soap</p>
+        <!-- Your Logo here -->
+      </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">
+            Unlock the Secret to Radiant Skin with Our Natural Soaps
+          </h1>
+          <p class="subtitle">
+            Experience the purest ingredients for all skin types – gentle,
+            effective, transformative.
+          </p>
+          <a href="#products" class="button is-primary"
+            >Discover Your Perfect Soap</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section" id="products">
+      <div class="container">
+        <h2 class="title has-text-centered">Featured Soaps</h2>
+        <!-- Product Items -->
+        <div class="columns is-multiline">
+          <!-- Repeat this block for each product -->
+          <div class="column is-one-third">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="soap-image.jpg" alt="Natural Soap" />
+                  <!-- Product Image -->
+                </figure>
+              </div>
+              <div class="card-content">
+                <p class="title is-4">Lavender Dream</p>
+                <p class="subtitle is-6">$15</p>
+                <p>
+                  Enjoy the soothing effects of lavender and chamomile that
+                  hydrate and refresh your skin.
+                </p>
+                <button class="button is-primary">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- End Product Block -->
+        </div>
+        <div class="has-text-centered">
+          <p class="is-size-5">
+            Purchase our Complete Natural Soap Set and receive a complimentary
+            handcrafted soap dish plus a detailed guide on achieving flawless
+            skin.
+          </p>
+          <p class="tag is-large is-primary">
+            Hurry! Offer valid while supplies last.
+          </p>
+          <button class="button is-large is-primary">Claim This Offer</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="section" id="guarantee">
+      <div class="container">
+        <h2 class="title has-text-centered">Our Guarantee</h2>
+        <p class="has-text-centered">
+          30-Day Radiant Skin Guarantee - Love the way your skin feels after 30
+          days or get your money back, no questions asked.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Natural Soap</strong> by
+          <a href="https://example.com">Your Company</a>.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
