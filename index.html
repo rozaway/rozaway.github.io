@@ -33,6 +33,14 @@
         justify-content: center;
         width: auto;
       }
+      .navbar-item {
+        transition: font-weight 0.3s ease; /* Smooth transition for shadow */
+      }
+      .navbar-item:hover,
+      .navbar-item.is-active {
+        background-color: #f5f5f5 !important; /* Ensures this style has priority */
+        font-weight: 600;
+      }
 
       .logo {
         display: flex;
