@@ -74,14 +74,26 @@
         background-image: url("https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover; /* Ensures the image covers the entire pseudo-element */
-        filter: blur(3px);
-        -webkit-filter: blur(5px);
+        background-size: cover;
+        height: 400px;
       }
 
       .hero-body {
         position: relative; /* Ensures text appears above the blurred background */
         z-index: 1; /* Raises the text above the pseudo-background */
+        height: 350px;
+      }
+
+      .hero-body h1,
+      .hero-body p {
+        margin: 0rem !important;
+        background: #f5f5f58b;
+        color: #363636;
+        mix-blend-mode: screen;
+      }
+
+      .hero-body a {
+        margin: 1.5rem auto;
       }
 
       .section {
@@ -342,7 +354,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="hero is-fullheight">
+    <section class="hero">
       <div class="hero-body">
         <div class="container has-text-centered">
           <h1 class="title half-highlighted">
