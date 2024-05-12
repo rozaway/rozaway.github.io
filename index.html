@@ -25,13 +25,16 @@
         width: 100%;
         position: relative;
         top: 10px;
-        display: flex;
-        justify-content: center;
         background-color: #f5f5f5;
+      }
+      .navbar-brand {
+        flex-grow: 1;
+        justify-content: flex-end;
+        display: flex;
       }
       .navbar-menu {
         justify-content: center;
-        width: auto;
+        width: 100%;
       }
       .navbar-item {
         transition: font-weight 0.3s ease; /* Smooth transition for shadow */
@@ -110,7 +113,22 @@
   <body>
     <!-- Navigation -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-menu">
+      <div class="navbar-brand">
+        <!-- Here's the burger icon that will show on mobile -->
+        <a
+          role="button"
+          class="navbar-burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navMenu"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navMenu" class="navbar-menu">
         <a class="navbar-item" href="#products">Products</a>
         <a class="navbar-item" href="#guarantee">Our Guarantee</a>
         <a class="navbar-item" href="#contact">Contact Us</a>
@@ -434,4 +452,30 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+        // Add a click event on each of them
+        $navbarBurgers.forEach((el) => {
+          el.addEventListener("click", () => {
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      }
+    });
+  </script>
 </html>
